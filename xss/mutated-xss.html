@@ -1,0 +1,10 @@
+<html>
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+
+<div>
+<p>you may test mXSS with both javascript enabled and disabled, and observe the differences in html codes on your browser (by inspecting Ctrl+Shift+I or equivalent)</p>
+<p>The noscript tag will be interpreted differently when JavaScript is enabled or disabled, based on the HTML specification.</p>
+<p>When JavaScript is disabled, the browser interprets differently when assigned to the innerHtml property of the template element.</p>
+<p>When JavaScript is enabled, the code is assigned to the innerHtml property of the div element.</p>
+</div>
+</html>
